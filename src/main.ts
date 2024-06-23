@@ -1,4 +1,4 @@
-import './app.css';
+import './css/output.css'; // Tailwind output css file
 import App from './App.svelte';
 
 const app = new App({

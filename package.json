@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "host": "vite --host",
+    "tw": "tailwindcss -i ./src/css/app.css -o ./src/css/output.css",
+    "tww": "tailwindcss -i ./src/css/app.css -o ./src/css/output.css --watch",
     "format": "prettier . --write",
     "lint": "eslint .",
     "build": "vite build",
@@ -28,6 +30,7 @@
     "prettier-plugin-tailwindcss": "^0.6.5",
     "svelte": "^4.2.18",
     "svelte-check": "^3.8.1",
+    "tailwindcss": "^3.4.4",
     "tslib": "^2.6.3",
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.13.1",
