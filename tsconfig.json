@@ -16,6 +16,12 @@
     "isolatedModules": true,
     "moduleDetection": "force"
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+    "svelte.config.js",
+    "eslint.config.js"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
