@@ -8,7 +8,7 @@
     flip,
     shift,
     offset,
-    arrow,
+    arrow
   } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
