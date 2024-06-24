@@ -2,6 +2,7 @@ import { join } from 'path';
 import type { Config } from 'tailwindcss';
 import forms from '@tailwindcss/forms';
 import { skeleton } from '@skeletonlabs/tw-plugin';
+import { customTheme } from './custom-theme';
 
 export default {
   darkMode: 'class',
@@ -19,12 +20,7 @@ export default {
     forms,
     skeleton({
       themes: {
-        preset: [
-          {
-            name: 'skeleton',
-            enhancements: true
-          }
-        ]
+        custom: [customTheme]
       }
     })
   ]

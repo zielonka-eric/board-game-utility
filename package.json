@@ -11,7 +11,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "precommit": "npm install && npm run format && npm run lint && npm run build && npm run check"
   },
   "devDependencies": {
     "@skeletonlabs/skeleton": "2.10.1",
@@ -42,6 +43,7 @@
     "vite-plugin-tailwind-purgecss": "0.3.3"
   },
   "dependencies": {
-    "@floating-ui/dom": "1.6.5"
+    "@floating-ui/dom": "1.6.5",
+    "lucide-svelte": "^0.396.0"
   }
 }
